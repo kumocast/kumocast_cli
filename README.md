@@ -20,23 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-    Add post
+### Add post
 
-    ```
-      $ kumocast add post
-    ```
+```
+  $ kumocast add post
+```
 
-    Add guest
+### Add guest
 
-    ```
-      $ kumocast add guest
-    ```
+```
+  $ kumocast add guest
+```
 
-    List guests
+### List guests
 
-    ```
-      $ kumocast show guest
-    ```
+```
+  $ kumocast show guest
+```
 
 ## Development
 

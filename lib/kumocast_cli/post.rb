@@ -34,7 +34,7 @@ module KumocastCli
     end
 
     def datetime
-      DateTime.now
+      @datetime ||= DateTime.now
     end
 
     def audio_file

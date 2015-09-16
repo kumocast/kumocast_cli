@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kumocast_cli (0.1.0)
+    kumocast_cli (0.0.1)
 
 GEM
   remote: https://rubygems.org/

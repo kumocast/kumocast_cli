@@ -26,6 +26,9 @@ module KumocastCli
             end
           when :Array
             input.gsub(',', ' ').split(/\s+/)
+          else
+            warn 'undefined data type in Prompt'
+            nil
         end
       end
     end

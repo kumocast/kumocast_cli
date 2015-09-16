@@ -29,6 +29,7 @@ module KumocastCli
     private
 
     def members
+      # push が破壊的なために毎度ローカル変数を作ってる
       g = guests
       g.push('gaaamii', 'karur4n')
     end

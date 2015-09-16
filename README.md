@@ -7,16 +7,12 @@ cli for kumocast
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kumocast_cli'
+gem 'kumocast_cli', git: 'git://github.com/kumocast/kumocast_cli.git'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install kumocast_cli
 
 ## Usage
 
@@ -26,13 +22,34 @@ Or install it yourself as:
   $ kumocast add post
 ```
 
-### Add guest
+### Future...
+
+#### Add guest
 
 ```
   $ kumocast add guest
 ```
 
-### List guests
+generate
+
+```
+    ---
+    layout: post
+    title: <%= title %>
+    date: <%= datetime %>
+    duration: # TODO: Fill this. Example: 1時間30分
+    members: <%= members %>
+    audio: http://kumocast.jp/audios/<%= audio_file %>
+    description: <%= stringify_topics %> などについて話しました。
+    number: <%= number %>
+    ---
+
+    ### Show Notes
+
+    -
+```
+
+#### List guests
 
 ```
   $ kumocast show guest

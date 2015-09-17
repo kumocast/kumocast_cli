@@ -23,7 +23,7 @@ module KumocastCli
     private
 
     def has_valid_method_name?
-      if method_name == nil
+      if method_name.nil?
         # TODO: ヘルプを表示しよう
         warn 'Should input method'
         return false
@@ -40,7 +40,7 @@ module KumocastCli
     end
 
     def has_valid_type_name?
-      if type_name == nil
+      if type_name.nil?
         # TODO: メソッドに対するタイプを羅列したい
         warn 'type none'
         return false

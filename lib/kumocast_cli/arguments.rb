@@ -26,14 +26,14 @@ module KumocastCli
       if method_name == nil
         # TODO: ヘルプを表示しよう
         warn 'Should input method'
-        exit(0)
+        return false
       end
 
       # クラス名として探索するために capitalize する
       # cli において add というメソッドがあるか => Methods::Add が存在するか
       unless KumocastCli::Methods.const_defined?(capitalized_method_name.to_sym)
         warn 'undefined method'
-        exit(0)
+        return false
       end
 
       true
@@ -43,13 +43,13 @@ module KumocastCli
       if type_name == nil
         # TODO: メソッドに対するタイプを羅列したい
         warn 'type none'
-        exit(0)
+        return false
       end
 
       exist_type_exp = "defined? KumocastCli::Methods::#{capitalized_method_name}.#{type_name}"
       unless eval(exist_type_exp)
         warn 'undefined type'
-        exit(0)
+        return false
       end
 
       true
